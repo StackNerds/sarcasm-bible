@@ -1,4 +1,90 @@
-.main{
-    height: 100vh;
-    background: rgba(7, 231, 55, 0.295);
+body {
+  height: 100vh;
+  /* background: rgba(7, 231, 55, 0.295); */
+}
+
+/* -----------------Header------------------------- */
+nav {
+  display: flex !important;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  
+}
+header {
+  padding: 20px;
+}
+a {
+  color: rgb(206, 206, 206);
+}
+.navbar-brand {
+  font-family: "Satisfy", cursive;
+  font-size: 52px;
+}
+.form-group input {
+  width: 7 0%;
+  padding: 15px;
+}
+.form-group input::placeholder {
+  color: #ccc;
+}
+
+/* -----------------Main section------------------------- */
+
+.main {
+  margin: 80px;
+}
+
+.word {
+  padding: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+}
+.top {
+  border-bottom: 2px solid #2a74a5;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.icons i {
+  font-size: 20px;
+  color: #2a74a5;
+}
+.icons i:hover {
+  color: brown;
+}
+.main .btn {
+  border: 1px solid #000;
+  display: flex;
+  width: 23%;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
+}
+.btn i {
+}
+.btn i:hover {
+  color: brown;
+}
+
+.aside {
+  padding: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+  width: 100%;
+}
+
+.aside span {
+    width: 40px;
+}
+aside i{
+    border: 1px solid #000;
+    width: 100%;
+    border-radius: 10px;
 }
