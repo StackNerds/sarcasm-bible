@@ -32,7 +32,7 @@ a {
   font-size: 52px;
 }
 .form-group input {
-  /* width: 70%; */
+  width: 97%;
   padding: 10px;
 }
 .form-group input::placeholder {
@@ -106,4 +106,9 @@ border: 1px solid #2a74a5;
   text-align: center;
   width: 100%;
 
+}
+
+footer{
+  padding: 50px;
+  color: #fff;
 }
