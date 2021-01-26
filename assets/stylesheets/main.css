@@ -142,10 +142,7 @@ footer p {
   font-weight: 400;
 }
 
-#navbar {
-  /* overflow: hidden; */
-  /* z-index: 99; */
-}
+
 .sticky {
   position: fixed;
   top: 0;
