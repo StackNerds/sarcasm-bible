@@ -32,35 +32,41 @@
 </head>
 
 <body>
-    <header class="bg-dark ">
+    <header class="bg-dark">
         <div class="container">
-            <nav class="navbar navbar-expand-md bg-dark text-white">
-                <a class="navbar-brand" href="#">
-                    Sarcasm Bible </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3"
-                    aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse text-white" id="navbarNav3">
-                    <ul class="text-white navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://www.froala.com">Books <span
-                                    class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.froala.com">Categories</a>
-                        </li>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-white">
+                <div>
+                    <a class="navbar-brand text-white" href="#">
+                        Sarcasm Bible</a>                
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class=" align-items-end text-white navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li> <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li> 
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.froala.com">Blog</a>
                         </li>
-
                     </ul>
-
-                    <a class="btn btn-outline-primary ml-md-3" href="https://www.froala.com">Button</a>
+                    <a class="btn btn-outline-primary ml-md-3" href="https://www.froala.com">Signup</a>
                 </div>
             </nav>
+           
             <div class="form-group">
                 <label for=""></label>
                 <input type="text" class=" ml-3  form-control" name="" id="" aria-describedby="helpId"
@@ -90,54 +96,26 @@
                         reprehenderit ut voluptatum odio itaque nihil in et quasi. Alias voluptas necessitatibus
                         accusantium aliquam modi adipisci iste.</p>
                     <div class="d-flex align-items-center justify-content-between last">
-                        <div class="author">
-                            <h3>Author</h3>
+                        <div class="d-flex align-items-center justify-content-between author">
+                            <p>Author: </p>
                             <p>John Doe</p>
                         </div>
-                        <div class="btn py-3 px-4">
-                            <i class="fa fa-thumbs-up" aria-hidden="true"> 100</i>
-                            <span></span>
-                            <i class="fa fa-thumbs-down" aria-hidden="true"> 20</i>
-                        </div>
+                        <div class="btn py-3 px-2">
+                            <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
+                            <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
+                        </div>  
+
                     </div>
 
                 </div>
                 <div class="spacer my-5"></div>
-
-                <div class="word">
-                    <div class="top">
-                        <div class="date d-flex justify-content-between align-items-center ">
-                            <p>Today: Jan 22 Word of the day</p>
-                            <div class="icons py-2 px-4">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <i class="fa fa-share-alt" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="py-3">Title of the word</h2>
-                    <p clas>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, ad dolorem ullam non
-                        reprehenderit ut voluptatum odio itaque nihil in et quasi. Alias voluptas necessitatibus
-                        accusantium aliquam modi adipisci iste.</p>
-                    <div class="d-flex align-items-center justify-content-between last">
-                        <div class="author">
-                            <h3>Author</h3>
-                            <p>John Doe</p>
-                        </div>
-                        <div class="btn py-3 px-4">
-                            <i class="fa fa-thumbs-up" aria-hidden="true"> 100</i>
-                            <span></span>
-                            <i class="fa fa-thumbs-down" aria-hidden="true"> 20</i>
-                        </div>
-                    </div>
-
-                </div>
+                
             </div>
-            <div class="col-lg-4 ml-4">
+            <div class="col-lg-4">
                 <div class="container aside">
                     <div class="row">
-                        <h1>Follow Us</h1>
+                            <h2>Follow Us</h2>
+                        
                         <div class="">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="">
@@ -197,7 +175,7 @@
 
 
     <!---------------------------------Online scripts -------------------------------------------->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -205,12 +183,12 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
 
     <!----------------------------------- OFfline scripts ------------------------------------------->
-    <!-- <script src="/assets/boostrap/js/bootstrap.min.js"></script>
-    <script src="/assets/boostrap/js/bootstrap.min.js"></script> -->
+    <script src="/assets/boostrap/js/jquery.js"></script>
+    <script src="/assets/boostrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

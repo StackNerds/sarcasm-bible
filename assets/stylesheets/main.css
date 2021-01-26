@@ -1,6 +1,17 @@
+:root {
+  /* --soft-blue: #00a8ff; */
+  --primary: #2a74a5;
+  --hard-blue: #273c75;
+  --dark-overlay: rgba(22, 21, 21, 0.178);
+  --light-white: rgba(255, 255, 255, 0.527);
+  --text: #2f3640;
+  --light-text: #7f8fa6;
+  --facebook-blue: #4267B2;
+  --twitter-blue: #1DA1F2;
+}
 body {
   height: 100vh;
-  /* background: rgba(7, 231, 55, 0.295); */
+  font-family: 'lato', 'Roboto', 'monsterat'; 
 }
 
 /* -----------------Header------------------------- */
@@ -9,10 +20,9 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
-
 }
 header {
-  padding: 20px;
+  padding: 12px;
 }
 a {
   color: rgb(206, 206, 206);
@@ -22,8 +32,8 @@ a {
   font-size: 52px;
 }
 .form-group input {
-  width: 7 0%;
-  padding: 15px;
+  /* width: 70%; */
+  padding: 10px;
 }
 .form-group input::placeholder {
   color: #ccc;
@@ -32,10 +42,10 @@ a {
 /* -----------------Main section------------------------- */
 
 .main {
-  margin: 80px;
+  margin: 50px;
 }
 
-.word {
+.word, .aside{
   padding: 50px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
@@ -57,6 +67,12 @@ a {
 .icons i:hover {
   color: brown;
 }
+header{
+  position: sticky !important;
+  /* top: 0; */
+  width: 100%;
+  padding-top: 60px;
+}
 .main .btn {
   border: 1px solid #000;
   display: flex;
@@ -65,25 +81,29 @@ a {
   border-radius: 10px;
   padding: 10px;
 }
-
+.btn i{
+  /* background: #000; */
+  color: #2a74a5;
+  margin: 0 8px;
+  font-size: 18px;
+}
 .btn i:hover {
   color: brown;
 }
+.btn span{
+  margin: 0 5px;
+  color: var(--text);
+  font-size: 10px;
+}
+.last .btn{
+border: 1px solid #2a74a5;
+}
 
-.aside {
-  padding: 50px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+.author p{
+  font-size: 14px;
+}
+.aside h2{
+  text-align: center;
   width: 100%;
-}
 
-.aside span {
-    width: 40px;
-}
-aside i{
-    border: 1px solid #000;
-    width: 100%;
-    border-radius: 10px;
 }
