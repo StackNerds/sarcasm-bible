@@ -133,7 +133,7 @@ header {
 footer {
   padding: 50px;
   color: var(--light-text);
-  background: linear-gradient(#2390bb, #05668d);
+  background: linear-gradient(#05668d, #05668d);
   font-family: "lato", sans-serif;
 }
 footer p{
@@ -150,4 +150,29 @@ footer p{
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+
+@media (max-width: 995px) {
+  .article{
+    display: block !important;
+    width: 100%;
+  }
+  .aside{
+    display: none;
+  }
+}
+
+@media (max-width: 798px) {
+  .navbar-brand{
+    font-size: 30px;
+  }
+  header .container{
+    max-width: 100% !important;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
 }
