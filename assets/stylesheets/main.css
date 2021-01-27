@@ -1,7 +1,10 @@
 :root {
   /* --soft-blue: #00a8ff; */
-  --primary: #05668d;
-  --border: #d81159;
+  /* --primary: #05668d; */
+  --primary: #084c61;
+  --primary: #0a1128;
+  /* --primary: #042a2b; */
+  --border: #ee2e31;
   --hard-blue: #273c75;
   --dark-overlay: rgba(22, 21, 21, 0.178);
   --light-white: rgba(255, 255, 255, 0.527);
@@ -80,13 +83,16 @@ a:hover{
   color: #ffffff;
 }
 .icons i:hover,
-.btn i:hover,
 .btn span:hover,
 .aside i:hover,
 .main a:hover {
   color: var(--border);
   cursor: pointer;
   transition: all 0.2s;
+}
+
+.content{
+  font-size: 15px;
 }
 
 .main .btn {
@@ -102,6 +108,9 @@ a:hover{
   font-size: 18px;
   transition: all 0.5s;
 }
+.btn i:hover{
+  color: #fff;
+}
 
 .btn span {
   margin: 0 5px;
@@ -110,10 +119,20 @@ a:hover{
 }
 .last .btn {
   border: 1px solid var(--primary);
+  padding: 15px !important;
+}
+.last .btn:hover{
+  border: 1px solid #ffffff;
+  background: var(--primary);
+
 }
 
 .author p {
   font-size: 14px;
+}
+.author:hover{
+  color: var(--border);
+  cursor: pointer;
 }
 .aside {
   width: 100%;
@@ -131,15 +150,20 @@ a:hover{
   height: 2px;
   background: var(--border);
 }
+.aside p{
+  font-size: 14px;
+  text-align: left;
+}
 
 footer {
   padding: 50px;
   color: var(--light-text);
-  background: linear-gradient(#05668d, #05668d);
+  background: var(--primary);
   font-family: "lato", sans-serif;
 }
 footer p {
   font-weight: 400;
+  font-size: 14px;
 }
 
 
@@ -148,7 +172,7 @@ footer p {
   top: 0;
   left: 0;
   z-index: 99;
-  background: #05688f;
+  background: var(--primary);
   padding: 0 60px !important;
   width: 100% !important;
   transition: all linear 0.5s;
