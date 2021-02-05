@@ -18,11 +18,7 @@ body {
   font-family: "lato", "Roboto", "monsterat";
 }
 
-/* -----------------Header------------------------- */
-nav {
-  display: flex !important;
-  justify-content: space-between;
-}
+
 header {
   padding: 12px;
   background-color: var(--primary);
@@ -36,12 +32,9 @@ a {
 }
 .navbar-brand {
   font-family: "Satisfy", cursive;
-  font-size: 52px;
+  font-size: 38px;
 }
-.form-group input {
-  width: 97%;
-  padding: 10px;
-}
+
 
 .form-group input::placeholder {
   color: #ccc;
@@ -93,7 +86,6 @@ aside i:hover,
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  /* padding: 10px; */
 }
 .btn i {
   margin: 0 8px;
@@ -170,4 +162,23 @@ footer p {
 }
 .sticky .navbar-brand {
   font-size: 30px;
+}
+
+.show > .dropdown-menu {
+  max-height: 900px;
+  visibility: visible;
+}
+  
+.dropdown-menu {
+  display: block;
+  max-height: 0;
+  visibility: hidden;
+  transition: all 0.35s ease-in-out;
+  overflow: hidden;
+}
+
+
+.card-body span{
+  background-color: var(--primary);
+
 }
