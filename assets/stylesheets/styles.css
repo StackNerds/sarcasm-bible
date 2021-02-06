@@ -168,7 +168,15 @@ footer p {
   max-height: 900px;
   visibility: visible;
 }
-  
+
+.verses span{
+  display: inline-block;
+}
+
+
+
+
+
 .dropdown-menu {
   display: block;
   max-height: 0;
