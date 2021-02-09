@@ -26,21 +26,22 @@
       <div class="container">
         <nav id="navbar" class="navbar navbar-expand-md navbar-dark align-items-center">
           <div class="container">
-              <a class="navbar-brand" href="#">Sarcasm Bible</a>
+              <a class="navbar-brand" href="/assets/">Sarcasm Bible</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   
                   <ul class="navbar-nav ml-auto">
+                    
                     <li class="nav-item dropdown position-static">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
                       <ul class="dropdown-menu w-100 shadow p-0" id="navbarDropdownMega">
                           <li class="dropdown-item">
                               <div class="row py-3">
-                                  <div class="col-md-6 col-lg-6 pb-2">
+                                  <div class="col-md-6 col-lg-6 pb-2 ">
                                       <div class="card h-100">                      
-                                          <div class="d-flex justify-content-center flex-row flex-wrap">
+                                          <div id= 'book' class="book d-flex justify-content-center flex-row flex-wrap">
                                             <div class="py-2 px-2 my-1 mx-2 rounded border">Genesis</div>
                                             <div class="py-2 px-2 my-1 mx-2 rounded border">Genesis</div>
                                             <div class="py-2 px-2 my-1 mx-2 rounded border">Genesis</div>
@@ -56,22 +57,13 @@
                                             <div class="py-2 px-2 my-1 mx-2 rounded border">Exodus</div>
                                             <div class="py-2 px-2 my-1 mx-2 rounded border">Levitcus</div>
                                             <div class="py-2 px-2 my-1 mx-2 rounded border">Shabbah</div>
-                                            <div class="py-2 px-2 my-1 mx-2 rounded border">Linly</div>
-                                            <div class="py-2 px-2 my-1 mx-2 rounded border">Johnny</div>
-                                            <div class="py-2 px-2 my-1 mx-2 rounded border">Revelations</div>
-                                            <div class="pzy-2 px-2 my-1 mx-2 rounded border">Abbys</div>
-                                            <div class="py-2 px-2 my-1 mx-2 rounded border">Helga</div>
                                           </div>
                                       </div>
                                   </div>
                                   <div class="col-md-6 col-lg-6 pb-2">
                                       <div class="card rounded-lg h-100">
                                           <div class="card-body py-2 d-flex flex-column">
-                                              <h6 class="text-uppercase small">New user:JacksonDavid Customer</h6>
-                                              <h4 class="mb-0 text-info text-truncate">Austin Farnum</h4>
-                                              <p class="mt-1 text-truncate">Fort Knox, TX 28192</p>
-                                              <h3 class="mb-0 mt-auto">$197.55</h3>
-                                              <div>Total items: 3</div>
+                                              
                                           </div>
                                       </div>
                                   </div>
@@ -81,106 +73,85 @@
                           </li>
                       </ul>
                   </li>
+                  
                     <li class="nav-item dropdown position-static">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories </a>
                       <ul class="dropdown-menu w-100 shadow p-0" id="navbarDropdownMega">
                           <li class="dropdown-item">
-                              <div class="row py-3">
+                              <div class="row py-3 categories">
                                   <div class="col-md-6 col-lg-3 pb-2">
-                                      <div class="card h-100">
+                                      <div class="card">
                                           <a href="#">
-                                              <img src="http://placehold.it/450x200" class="img-fluid">
+                                              <img src="/assets/images/praying-5406270_640.jpg" class="img-fluid rounded border">
                                           </a>
-                                          <div class="card-body"> </div>
+                                          <!-- <div class="card-body"> </div> -->
                                       </div>
                                   </div>
                                   <div class="col-md-6 col-lg-3 pb-2">
                                       <div class="card rounded-lg h-100">
                                           <div class="card-body py-2 d-flex flex-column">
-                                              <h6 class="text-uppercase small">Prophecies</h6>
-                                              <h4 class="mb-0 text-info text-truncate">Austin Farnum</h4>
-                                              <p class="mt-1 text-truncate">Fort Knox, TX 28192</p>
-                                              <h3 class="mb-0 mt-auto">$197.55</h3>
-                                              <div>Total items: 3</div>
+                                              <h5 class="text-uppercase text-center ">Prophecies</h5>
+                                             <button class="btn mt-2">Prophecy 1</button>
+                                             <button class="btn mt-2">Prophecy 1</button>
+                                             <button class="btn mt-2">Prophecy 1</button>
                                           </div>
                                       </div>
-                                  </div>
-                                  <div class="col-md-6 col-lg-3 pb-2 text-center">
-                                      <form>
-                                          <div class="position-relative form-group">
-                                              <input name="name" id="textname1" placeholder="Enter Name Here" type="text" class="form-control">
-                                          </div>
-                                          <div class="position-relative form-group">
-                                              <input name="email" id="exampleEmail2" placeholder="Enter Email Here" type="email" class="form-control">
-                                          </div>
-                                          <div class="position-relative form-group">
-                                              <textarea name="text" id="exampleText2" placeholder="Message" class="form-control"></textarea>
-                                          </div>
-                                          <button class="btn btn-primary float-right">Submit</button>
-                                      </form>
                                   </div>
                                   <div class="col-md-6 col-lg-3 pb-2">
-                                      <div class="card rounded-lg h-100">
-                                          <div class="card-body">
-                                              <ul class="list-unstyled">
-                                                  <li>Other Content...</li>
-                                                  <li><a href="#" class="text-info">Component alignment</a></li>
-                                                  <li><a href="#" class="text-info">Fixed to top</a></li>
-                                                  <li><a href="#" class="text-info">Fixed to bottom</a></li>
-                                                  <li><a href="#" class="text-info">Static top</a></li>
-                                                  <li><a href="#" class="text-info">Inverted navbar</a></li>
-                                              </ul>
-                                          </div>
+                                    <div class="card rounded-lg h-100">
+                                        <div class="card-body py-2 d-flex flex-column">
+                                            <h5 class="text-uppercase text-center">Revelations</h5>
+                                            <button class="btn mt-2">Revelation 1</button>
+                                            <button class="btn mt-2">Revelation 2</button>
+                                            <button class="btn mt-2">Revelation 3</button>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3 pb-2">
+                                  <div class="card rounded-lg h-100">
+                                      <div class="card-body py-2 d-flex flex-column">
+                                          <h5 class="text-uppercase text-center">Updates</h5>
+                                          <button class="btn mt-2">Update 1</button>
+                                          <button class="btn mt-2">Update 2</button>
+                                          <button class="btn mt-2">Update 3</button>
+                                         
                                       </div>
                                   </div>
+                              </div>
                               </div>
                           </li>
                       </ul>
                   </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown more">
                         
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLbl" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Fancy Menu </a>
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLbl" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> More </a>
                           <div class="dropdown-menu dropdown-menu-right w-auto shadow p-0" id="navbarDropdown" aria-labelledby="navbarDropdownLbl">
                               <a class="dropdown-item d-flex flex-nowrap align-items-center px-0 py-3" target="new" rel="nofollow" href="https://themestr.app/customize">
                                   <div class="flex-shrink-1 text-center px-3"><i class="ion-ios-construct-outline h1"></i></div>
                                   <div class="pl-0 pr-4">
-                                      <h5 class="mb-0">Customizer</h5> Build a custom Bootstrap version
+                                      <h5 class="mb-0">Contribute verses</h5> You can send us verses today!
                                   </div>
                               </a>
-                              <a class="dropdown-item d-flex flex-nowrap align-items-center px-0 py-3" target="new" rel="nofollow" href="http://bootstrap.themes.guide/how-to.html">
-                                  <div class="flex-shrink-1 text-center  px-3"><i class="ion-ios-bookmarks-outline h1"></i></div>
-                                  <div class="pl-0 pr-4">
-                                      <h5 class="mb-0">How-to...</h5> Learn how to use Bootstrap 4
-                                  </div>
-                              </a>
-                              <a class="dropdown-item d-flex flex-nowrap align-items-center px-0 py-3" target="new" rel="nofollow" href="http://bootstrap4.guide/cn/starter-templates">
-                                  <div class="flex-shrink-1 text-center  px-3"><i class="ion-ios-jet-outline h1"></i></div>
-                                  <div class="pl-0 pr-4">
-                                      <h5 class="mb-0">Starter Templates</h5> Kickstart your Bootstrap 4 projects
-                                  </div>
-                              </a>
+                              
+                             
                               <a class="dropdown-item d-flex flex-nowrap align-items-center px-0 py-3" target="new" rel="nofollow" href="http://bootstrap4.guide">
                                   <div class="flex-shrink-1 text-center  px-3"><i class="ion-ios-cube-outline h1"></i></div>
                                   <div class="pl-0 pr-4">
-                                      <h5 class="mb-0">Bootstrap4.guide</h5> Ultimate Bootstrap 4 toolbox
+                                      <h5 class="mb-0">Sponsor</h5> Buy us a cup of coffee today
                                   </div>
                               </a>
                               <a class="dropdown-item d-flex flex-nowrap align-items-center px-0 py-3" target="new" rel="nofollow" href="https://themesguide.github.io/top-hat/dist/">
                                   <div class="flex-shrink-1 text-center  px-3"><i class="ion-ios-cloud-download-outline h1"></i></div>
                                   <div class="pl-0 pr-4">
-                                      <h5 class="mb-0">Tophat themes</h5> Download free Bootstrap 4 themes
+                                      <h5 class="mb-0">Contact</h5> Follow us on our pages
                                   </div>
                               </a>
-                              <a class="dropdown-item d-flex flex-nowrap align-items-center px-0 py-3" target="new" rel="nofollow" href="https://themestr.app/">
-                                  <div class="flex-shrink-1 text-center px-3"><i class="ion-ios-color-palette-outline h1"></i></div>
-                                  <div class="pl-0 pr-4">
-                                      <h5 class="mb-0">Themestr.app</h5> Create custom Bootstrap themes
-                                  </div>
-                              </a>
+                             
                           </div>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="https://www.froala.com">Blog</a>
+                        <a class="nav-link" href="/blog.html">Blog</a>
                       </li>
                   </ul>
               </div>

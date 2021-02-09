@@ -93,7 +93,7 @@ aside i:hover,
   transition: all 0.5s;
 }
 .btn i:hover {
-  color: #fff;
+  color: var(--border);
 }
 
 .btn span {
@@ -103,11 +103,11 @@ aside i:hover,
 }
 .last .btn {
   border: 1px solid var(--primary);
-  padding: 15px !important;
+  padding: 8px !important;
 }
 .last .btn:hover {
-  border: 1px solid #ffffff;
-  background: var(--primary);
+  border: 1px solid var(--border);
+  /* background: var(--primary); */
 }
 
 .author p {
@@ -173,10 +173,6 @@ footer p {
   display: inline-block;
 }
 
-
-
-
-
 .dropdown-menu {
   display: block;
   max-height: 0;
@@ -184,9 +180,17 @@ footer p {
   transition: all 0.35s ease-in-out;
   overflow: hidden;
 }
-
+.more a:hover, .book div:hover{
+  color: #ddd;
+  background-color: var(--primary) !important;
+  transition: all 0.2s;
+}
 
 .card-body span{
   background-color: var(--primary);
 
+}
+.categories button:hover{
+  background-color: var(--primary) !important;
+  color: #ddd;
 }
