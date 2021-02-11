@@ -1,10 +1,10 @@
 :root {
   /* --soft-blue: #00a8ff; */
-  /* --primary: #05668d; */
-  /* --primary: #084c61; */
-  --primary: #0a1128;
-  /* --primary: #042a2b; */
-  --border: #ee2e31;
+  /* --primary-color: #05668d; */
+  /* --primary-color: #084c61; */
+  --primary-color: #0a1128;
+  /* --primary-color: #042a2b; */
+  --light-red: #ee2e31;
   --hard-blue: #273c75;
   --dark-overlay: rgba(22, 21, 21, 0.178);
   --light-white: rgba(255, 255, 255, 0.527);
@@ -18,14 +18,10 @@ body {
   font-family: "lato", "Roboto", "monsterat";
 }
 
-/* -----------------Header------------------------- */
-nav {
-  display: flex !important;
-  justify-content: space-between;
-}
+
 header {
   padding: 12px;
-  background-color: var(--primary);
+  background-color: var(--primary-color);
   min-width: 100%;
 }
 .dropdown-menu {
@@ -36,12 +32,9 @@ a {
 }
 .navbar-brand {
   font-family: "Satisfy", cursive;
-  font-size: 52px;
+  font-size: 38px;
 }
-.form-group input {
-  width: 97%;
-  padding: 10px;
-}
+
 
 .form-group input::placeholder {
   color: #ccc;
@@ -59,7 +52,7 @@ aside {
   width: 100%;
 }
 .top {
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid var(--light-red);
 }
 .icons {
   display: flex;
@@ -69,7 +62,7 @@ aside {
 .icons i,
 .btn i {
   font-size: 20px;
-  color: var(--primary);
+  color: var(--primary-color);
   transition: all 0.7s;
 }
 a:hover {
@@ -79,7 +72,7 @@ a:hover {
 .btn span:hover,
 aside i:hover,
 .main a:hover {
-  color: var(--border);
+  color: var(--light-red);
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -89,11 +82,10 @@ aside i:hover,
 }
 
 .main .btn {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-color);
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  /* padding: 10px; */
 }
 .btn i {
   margin: 0 8px;
@@ -101,7 +93,7 @@ aside i:hover,
   transition: all 0.5s;
 }
 .btn i:hover {
-  color: #fff;
+  color: var(--light-red);
 }
 
 .btn span {
@@ -110,19 +102,19 @@ aside i:hover,
   font-size: 14px;
 }
 .last .btn {
-  border: 1px solid var(--primary);
-  padding: 15px !important;
+  border: 1px solid var(--primary-color);
+  padding: 8px !important;
 }
 .last .btn:hover {
-  border: 1px solid #ffffff;
-  background: var(--primary);
+  border: 1px solid var(--light-red);
+  /* background: var(--primary-color); */
 }
 
 .author p {
   font-size: 14px;
 }
 .author:hover {
-  color: var(--border);
+  color: var(--light-red);
   cursor: pointer;
 }
 aside {
@@ -140,7 +132,7 @@ aside h2::after {
   position: absolute;
   width: 70%;
   height: 2px;
-  background: var(--border);
+  background: var(--light-red);
 }
 aside p {
   font-size: 14px;
@@ -150,7 +142,7 @@ aside p {
 footer {
   padding: 50px;
   color: var(--light-text);
-  background: var(--primary);
+  background: var(--primary-color);
   font-family: "lato", sans-serif;
 }
 footer p {
@@ -163,11 +155,54 @@ footer p {
   top: 0;
   left: 0;
   z-index: 99;
-  background: var(--primary);
+  background: var(--primary-color);
   padding: 0 60px !important;
   width: 100% !important;
   transition: all linear 0.5s;
 }
 .sticky .navbar-brand {
   font-size: 30px;
+}
+
+.show > .dropdown-menu {
+  max-height: 900px;
+  visibility: visible;
+}
+
+.verses span{
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: block;
+  max-height: 0;
+  visibility: hidden;
+  transition: all 0.35s ease-in-out;
+  overflow: hidden;
+}
+.more a:hover, .book div:hover{
+  color: #ddd;
+  background-color: var(--primary-color) !important;
+  transition: all 0.2s;
+}
+
+.card-body span{
+  background-color: var(--primary-color);
+
+}
+.categories button:hover{
+  background-color: var(--primary-color) !important;
+  color: #ddd;
+}
+.categories h5{
+  padding-bottom: 10px;
+border-bottom: 2px solid var(--primary-color);
+}
+
+option{
+  background-color: #0a1128;
+  /* color: var(--light-text); */
+}
+option:hover{
+  background-color: var(--light-red);
 }
