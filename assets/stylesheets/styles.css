@@ -162,7 +162,7 @@ footer p {
   background: var(--primary-color);
   padding: 0 60px !important;
   width: 100% !important;
-  transition: all 0.5s linear;
+  transition: all 0.4s linear;
   /* height: 100%; */
 }
 .sticky .navbar-brand {
@@ -222,7 +222,6 @@ option:hover{
   right: 0;
   z-index: 1;
   padding: 0 60px !important;
-  /* transition: all linear 0.5s; */
 }
 
 
