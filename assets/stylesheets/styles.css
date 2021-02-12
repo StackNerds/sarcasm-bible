@@ -162,7 +162,7 @@ footer p {
   background: var(--primary-color);
   padding: 0 60px !important;
   width: 100% !important;
-  transition: all linear 0.5s;
+  transition: all 0.5s linear;
   /* height: 100%; */
 }
 .sticky .navbar-brand {
@@ -172,6 +172,7 @@ footer p {
 .show > .dropdown-menu {
   max-height: 900px;
   visibility: visible;
+ 
 }
 
 .verses span{
@@ -182,7 +183,7 @@ footer p {
   display: block;
   max-height: 0;
   visibility: hidden;
-  transition: all 0.35s ease-in-out;
+  transition: all 1s ease-in-out;
   overflow: hidden;
   top: 52px;
 
@@ -221,5 +222,7 @@ option:hover{
   right: 0;
   z-index: 1;
   padding: 0 60px !important;
-  transition: all linear 0.5s;
+  /* transition: all linear 0.5s; */
 }
+
+
