@@ -54,13 +54,16 @@ aside {
   box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
   width: 100%;
 }
+aside{
+  padding: 0;
+}
 .top {
   border-bottom: 2px solid var(--light-red);
 }
 .icons {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 200px;
 }
 .icons i,
 .btn i {
@@ -156,6 +159,7 @@ footer p {
 
 .sticky {
   position: fixed;
+  /* overflow-y: scroll; */
   top: 0;
   left: 0;
   z-index: 99;
@@ -170,7 +174,8 @@ footer p {
 }
 
 .show > .dropdown-menu {
-  max-height: 900px;
+  max-height: 500px;
+  overflow-y: scroll;
   visibility: visible;
  
 }
@@ -183,7 +188,7 @@ footer p {
   display: block;
   max-height: 0;
   visibility: hidden;
-  transition: all 1s ease-in-out;
+  transition: all 0.4s ease-in-out;
   overflow: hidden;
   top: 52px;
 
@@ -224,4 +229,53 @@ option:hover{
   padding: 0 60px !important;
 }
 
+.offcanvas-header{ display:none; }
 
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: var(--primary-color);
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+  .nav-item {
+    padding-top: 30px;
+  }
+  .nav-item i{
+    font-size: 20px;
+    margin-right: 5px;
+    display: none;
+  }
+  .navbar-brand, .sticky .navbar-brand{
+    font-size: 25px;
+  }
+  .btn-close{
+    border: 1px solid var(--light-text) !important;
+    color: var(--light-text);
+  }
+  .btn-close:hover{
+    background-color: var(--light-text);
+    color: var(--primary-color);
+
+  }
+  aside{
+    margin-top: 20px;
+  }
+  aside h2{
+    font-size: 25px;
+  }
+
+
+}
