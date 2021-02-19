@@ -14,7 +14,6 @@
   --twitter-blue: #1da1f2;
 }
 
-
 body {
   height: 100vh;
   font-family: "lato", "Roboto", "monsterat";
@@ -42,7 +41,8 @@ a {
 nav {
   z-index: 99;
 }
-.nav-item i, .nav-item a {
+.nav-item i,
+.nav-item a {
   color: #fff;
   display: inline-block;
 }
@@ -195,7 +195,7 @@ footer p {
   width: 100% !important;
   top: 52px;
 }
-.more a{
+.more a {
   color: var(--primary-color);
 }
 .more a:hover,
@@ -245,17 +245,55 @@ option:hover {
 .offcanvas-header {
   display: none;
 }
-@media  (min-width:766px) and (max-width:990px){
+
+/* Blog section */
+
+/* .card img{
+  width: 100%;
+  height: 300px;
+}
+.card img:hover{
+  filter: opacity(10%);
+  background: var(--primary-color);
+
+  transition: all ease-in-out 0.7s;
+} */
+.blog {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-image: url("/assets/images/adult-3086304_640.jpg");
+  background-size: cover;
+  transition: all linear 1.7s;
+
   
-  .nav-item i{
+}
+.blog:hover{
+  transition: all linear 0.7s;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.434)), url("/assets/images/adult-3086304_640.jpg");
+
+
+}
+.blog button {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  z-index: 0;
+}
+
+@media (min-width: 766px) and (max-width: 990px) {
+  .nav-item i {
     display: none;
+  }
+  .navbar-brand {
+    font-size: 30px;
   }
 }
 @media (max-width: 766px) {
   .offcanvas-header {
     display: block;
   }
-  .dropdown-menu{
+  .dropdown-menu {
     display: absolute;
     left: -20px;
   }
@@ -276,13 +314,13 @@ option:hover {
     visibility: visible;
     transform: translateX(-100%);
   }
-  
+
   .nav-item i {
     font-size: 20px;
     margin-right: 0;
-    display: inline-block ;
+    display: inline-block;
   }
-  .nav-item{
+  .nav-item {
     padding-top: 80px;
   }
   .navbar-brand,
@@ -323,17 +361,19 @@ option:hover {
     color: var(--primary-color);
     background-color: #fff;
   }
-  .picker button:hover{
+  .picker button:hover {
     color: #fff;
     background-color: var(--primary-color);
   }
   .main-content {
     margin-top: 0 !important;
   }
-  .book{
+  .book {
     display: none !important;
   }
-  .categories img{
+  .categories img {
     display: none;
   }
 }
+
+/* blog detail section */
