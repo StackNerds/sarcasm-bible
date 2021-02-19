@@ -42,6 +42,9 @@ a {
 nav{
   z-index: 99;
 }
+.nav-item i{
+  color: #fff;
+}
 
 /* -----------------Main section------------------------- */
 
@@ -185,12 +188,15 @@ footer p {
 }
 
 .dropdown-menu {
-  display: block;
+  /* display: block; */
   max-height: 0;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
+  display: absolute;
+  width: 100% !important;
   top: 52px;
+  left: -20% !important;
 
 }
 .more a:hover, .book div:hover{
@@ -257,6 +263,7 @@ option:hover{
     font-size: 20px;
     margin-right: 5px;
     display: none;
+
   }
   .navbar-brand, .sticky .navbar-brand{
     font-size: 25px;
