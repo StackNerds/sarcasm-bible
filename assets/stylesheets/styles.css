@@ -13,6 +13,10 @@
   --facebook-blue: #4267b2;
   --twitter-blue: #1da1f2;
 }
+
+*{
+  /* border: 2px solid red !important; */
+}
 body {
   height: 100vh;
   font-family: "lato", "Roboto", "monsterat";
