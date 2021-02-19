@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
   <!---------------------------- Offline cdn ----------------------------------------------------------->
-  <!-- <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="/assets/boostrap/css/bootstrap.min.css" />
   <!-------------------------------------------Online cdn ---------------------------------------------->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
 
   <link rel="stylesheet" href="/assets/stylesheets/styles.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -46,12 +46,12 @@
               <a class="nav-link" href="/index.html">Home</a>
             </li>
 
-            <li class="nav-item dropdown dropright position-static d-flex align-items-center">
+            <li class="book d-none nav-item dropdown dropright position-static d-flex align-items-center">
               <i class="fa fa-book" aria-hidden="true"></i>
-              <a class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              <a class="  nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">Books</a>
               <ul class="dropdown-menu w-100 shadow p-0" id="navbarDropdownMega">
-                <li class="dropdown-item">
+                <li class="dropdown-item ">
                   <div class="row py-3">
                     <div class="col-md-4 col-lg-4 pb-2">
                       <div class="card h-100">
@@ -323,162 +323,265 @@
         <input type="text" class="ml-3 form-control" name="" id="" aria-describedby="helpId"
           placeholder="Type a word.............." />
       </div>
+
     </div>
   </header>
 
-  <main class="main-content container mt-5 mb-5">
-    <article class="row">
-      <div class="col-md-8 col">
-        <div class="word">
-          <div class="top">
-            <div class="date d-flex justify-content-between align-items-center">
-              <p>Today: Jan 22 Word of the day</p>
-              <div class="icons py-2 px-4">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <h2 class="py-3">Title of the word</h2>
-          <p class="content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
-            itaque nihil in et quasi. Alias voluptas necessitatibus
-            accusantium aliquam modi adipisci iste.
-          </p>
-          <div class="d-flex align-items-center justify-content-between last">
-            <div class="d-flex align-items-center justify-content-between author">
-              <p>Author:</p>
-              <p>John Doe</p>
-            </div>
-            <div class="btn py-3 px-2">
-              <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
-              <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
-            </div>
-          </div>
-        </div>
-        <div class="spacer my-5"></div>
+  <main class="main-content mt-5 mb-5">
+    <div class="card picker mb-5  ">
+      <div class="card-heading text-center mt-4">
+        <h4>Pick your verse here!</h4>
+      </div>
+      <div class="card-body">
+        <div class="">
+          <div class="form-group  d-flex justify-content-between ">
+            <select class="form-control text-dark mr-2" name="" id="">
+              <option class="mt-2 p-2 rounded border text-center">
+                Genesis
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                Smiley
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                1st Book of Lol
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                2nd Book of Lol
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                Skiboro
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                Fancy
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                Boyses
+              </option>
+            </select>
+            <select class="form-control text-dark mr-2" name="" id="">
+              <option class="mt-2 p-2 rounded border text-center">
+                1
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                2
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                3 </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                4 </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                5
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                6
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                7 </option>
+            </select>
+            <select class="form-control text-dark mr-2" name="" id="">
+              <option class="mt-2 p-2 rounded border text-center">
+                1
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                2
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                3 </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                4 </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                5
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                6
+              </option>
+              <option class="mt-2 p-2 rounded border text-center">
+                7 </option>
+            </select>
+            <button class="btn">Search</button>
 
-        <div class="word">
-          <div class="top">
-            <div class="date d-flex justify-content-between align-items-center">
-              <p>Today: Jan 22 Word of the day</p>
-              <div class="icons py-2 px-4">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <h2 class="py-3">Title of the word</h2>
-          <p class="content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
-            itaque nihil in et quasi. Alias voluptas necessitatibus
-            accusantium aliquam modi adipisci iste.
-          </p>
-          <div class="d-flex align-items-center justify-content-between last">
-            <div class="d-flex align-items-center justify-content-between author">
-              <p>Author:</p>
-              <p>John Doe</p>
-            </div>
-            <div class="btn py-3 px-2">
-              <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
-              <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="spacer my-5"></div>
-
-        <div class="word">
-          <div class="top">
-            <div class="date d-flex justify-content-between align-items-center">
-              <p>Today: Jan 22 Word of the day</p>
-              <div class="icons py-2 px-4">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <h2 class="py-3">Title of the word</h2>
-          <p class="content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
-            itaque nihil in et quasi. Alias voluptas necessitatibus
-            accusantium aliquam modi adipisci iste.
-          </p>
-          <div class="d-flex align-items-center justify-content-between last">
-            <div class="d-flex align-items-center justify-content-between author">
-              <p>Author:</p>
-              <p>John Doe</p>
-            </div>
-            <div class="btn py-3 px-2">
-              <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
-              <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
-            </div>
-          </div>
-        </div>
-        <div class="spacer my-5"></div>
-
-        <div class="word">
-          <div class="top">
-            <div class="date d-flex justify-content-between align-items-center">
-              <p>Today: Jan 22 Word of the day</p>
-              <div class="icons py-2 px-4">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-share-alt" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <h2 class="py-3">Title of the word</h2>
-          <p class="content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
-            itaque nihil in et quasi. Alias voluptas necessitatibus
-            accusantium aliquam modi adipisci iste.
-          </p>
-          <div class="d-flex align-items-center justify-content-between last">
-            <div class="d-flex align-items-center justify-content-between author">
-              <p>Author:</p>
-              <p>John Doe</p>
-            </div>
-            <div class="btn py-3 px-2">
-              <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
-              <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
-            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <aside class="container sticky2">
-          <div class="row">
-            <h2 class="mt-3">Follow Us</h2>
+    </div>
+    <div class="container">
+      <article class="row ">
+        <div class="col-md-8 col">
 
-            <div>
-              <i class="fa fa-facebook py-3" aria-hidden="true"><span class="mx-3">Facebook</span></i>
-              <i class="fa fa-instagram py-3" aria-hidden="true"><span class="mx-3">Instagram</span></i>
-              <i class="fa fa-twitter py-3" aria-hidden="true"><span class="mx-3">Twitter</span></i>
-              <i class="fa fa-share-alt py-3" aria-hidden="true"><span class="mx-3">Share</span></i>
-              <div class="mt-2 py-4 text-center">
-                <p class="content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione quae voluptate veniam eos odio odit iusto laborum sint
-                  reprehenderit ea tenetur autem consequuntur eius doloremque
-                  suscipit voluptas, officiis dolor ullam!
-                </p>
+          <div class="word">
+            <div class="top">
+              <div class="date d-flex justify-content-between align-items-center">
+                <p>Today: Jan 22 Word of the day</p>
+                <div class="icons py-2 px-4">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
               </div>
             </div>
-        </aside>
-      </div>
-    </article>
+            <h2 class="py-3">Title of the word</h2>
+            <p class="content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
+              itaque nihil in et quasi. Alias voluptas necessitatibus
+              accusantium aliquam modi adipisci iste.
+            </p>
+            <div class="d-flex align-items-center justify-content-between last">
+              <div class="d-flex align-items-center justify-content-between author">
+                <p>Author:</p>
+                <p>John Doe</p>
+              </div>
+              <div class="btn py-3 px-2">
+                <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
+                <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="spacer my-5"></div>
+
+          <div class="word">
+            <div class="top">
+              <div class="date d-flex justify-content-between align-items-center">
+                <p>Today: Jan 22 Word of the day</p>
+                <div class="icons py-2 px-4">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <h2 class="py-3">Title of the word</h2>
+            <p class="content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
+              itaque nihil in et quasi. Alias voluptas necessitatibus
+              accusantium aliquam modi adipisci iste.
+            </p>
+            <div class="d-flex align-items-center justify-content-between last">
+              <div class="d-flex align-items-center justify-content-between author">
+                <p>Author:</p>
+                <p>John Doe</p>
+              </div>
+              <div class="btn py-3 px-2">
+                <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
+                <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="spacer my-5"></div>
+
+          <div class="word">
+            <div class="top">
+              <div class="date d-flex justify-content-between align-items-center">
+                <p>Today: Jan 22 Word of the day</p>
+                <div class="icons py-2 px-4">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <h2 class="py-3">Title of the word</h2>
+            <p class="content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
+              itaque nihil in et quasi. Alias voluptas necessitatibus
+              accusantium aliquam modi adipisci iste.
+            </p>
+            <div class="d-flex align-items-center justify-content-between last">
+              <div class="d-flex align-items-center justify-content-between author">
+                <p>Author:</p>
+                <p>John Doe</p>
+              </div>
+              <div class="btn py-3 px-2">
+                <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
+                <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="spacer my-5"></div>
+
+          <div class="word">
+            <div class="top">
+              <div class="date d-flex justify-content-between align-items-center">
+                <p>Today: Jan 22 Word of the day</p>
+                <div class="icons py-2 px-4">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <h2 class="py-3">Title of the word</h2>
+            <p class="content">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur, ad dolorem ullam non reprehenderit ut voluptatum odio
+              itaque nihil in et quasi. Alias voluptas necessitatibus
+              accusantium aliquam modi adipisci iste.
+            </p>
+            <div class="d-flex align-items-center justify-content-between last">
+              <div class="d-flex align-items-center justify-content-between author">
+                <p>Author:</p>
+                <p>John Doe</p>
+              </div>
+              <div class="btn py-3 px-2">
+                <i class="fa fa-thumbs-up" aria-hidden="true"><span>100</span></i>
+                <i class="fa fa-thumbs-down" aria-hidden="true"><span>20</span></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <aside class="container sticky2">
+            <div class="row">
+              <h2 class="mt-3">Follow Us</h2>
+
+              <div>
+                <i class="fa fa-facebook py-3" aria-hidden="true"><span class="mx-3">Facebook</span></i>
+                <i class="fa fa-instagram py-3" aria-hidden="true"><span class="mx-3">Instagram</span></i>
+                <i class="fa fa-twitter py-3" aria-hidden="true"><span class="mx-3">Twitter</span></i>
+                <i class="fa fa-share-alt py-3" aria-hidden="true"><span class="mx-3">Share</span></i>
+                <div class="mt-2 py-4 text-center">
+                  <p class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione quae voluptate veniam eos odio odit iusto laborum sint
+                    reprehenderit ea tenetur autem consequuntur eius doloremque
+                    suscipit voluptas, officiis dolor ullam!
+                  </p>
+                </div>
+              </div>
+          </aside>
+        </div>
+      </article>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
   <section>
     <footer class="fdb-block footer-large">
@@ -528,9 +631,9 @@
         crossorigin="anonymous"></script> -->
 
   <!----------------------------------- OFfline scripts ------------------------------------------->
-  <!-- <script src="/assets/boostrap/js/jquery.js"></script> -->
-  <!-- <script src="/assets/boostrap/js/bootstrap.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="/assets/boostrap/js/jquery.js"></script>
+  <script src="/assets/boostrap/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
 
   <script src="/assets/scripts/script.js"></script>
 </body>

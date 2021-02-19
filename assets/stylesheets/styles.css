@@ -14,14 +14,13 @@
   --twitter-blue: #1da1f2;
 }
 
-*{
+* {
   /* border: 2px solid red !important; */
 }
 body {
   height: 100vh;
   font-family: "lato", "Roboto", "monsterat";
 }
-
 
 header {
   padding: 12px;
@@ -39,14 +38,13 @@ a {
   font-size: 38px;
 }
 
-
 .form-group input::placeholder {
   color: #ccc;
 }
-nav{
+nav {
   z-index: 99;
 }
-.nav-item i{
+.nav-item i {
   color: #fff;
 }
 
@@ -61,7 +59,7 @@ aside {
   box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
   width: 100%;
 }
-aside{
+aside {
   padding: 0;
 }
 .top {
@@ -107,7 +105,6 @@ aside i:hover,
 }
 .btn i:hover {
   color: var(--light-red);
-  
 }
 
 .btn span {
@@ -184,52 +181,47 @@ footer p {
   max-height: 500px;
   overflow-y: scroll;
   visibility: visible;
- 
 }
 
-.verses span{
+.verses span {
   display: inline-block;
 }
 
 .dropdown-menu {
-  /* display: block; */
+  display: block;
   max-height: 0;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
-  display: absolute;
   width: 100% !important;
   top: 52px;
-  left: -20% !important;
-
 }
-.more a:hover, .book div:hover{
+.more a:hover,
+.book div:hover {
   color: #ddd;
   background-color: var(--primary-color) !important;
   transition: all 0.2s;
 }
 
-.card-body span{
+.card-body span {
   background-color: var(--primary-color);
-
 }
-.categories button:hover{
+.categories button:hover {
   background-color: var(--primary-color) !important;
   color: #ddd;
 }
-.categories h5{
+.categories h5 {
   padding-bottom: 10px;
-border-bottom: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
-option{
+option {
   background-color: #0a1128;
   /* color: var(--light-text); */
 }
-option:hover{
+option:hover {
   background-color: var(--light-red);
 }
-
 
 .sticky2 {
   position: sticky;
@@ -239,13 +231,26 @@ option:hover{
   padding: 0 60px !important;
 }
 
-.offcanvas-header{ display:none; }
+.picker {
+  position: sticky;
+  top: 45px;
+  right: 0;
+  z-index: 55;
+  padding: 0 60px !important;
+  display: none;
+}
+
+.offcanvas-header {
+  display: none;
+}
 
 @media (max-width: 992px) {
-  .offcanvas-header{ display:block; }
+  .offcanvas-header {
+    display: block;
+  }
   .navbar-collapse {
     position: fixed;
-    top:0; 
+    top: 0;
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -254,7 +259,7 @@ option:hover{
     overflow-y: auto;
     visibility: hidden;
     background-color: var(--primary-color);
-    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: visibility 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   }
   .navbar-collapse.show {
     visibility: visible;
@@ -263,30 +268,57 @@ option:hover{
   .nav-item {
     padding-top: 30px;
   }
-  .nav-item i{
+  .nav-item i {
     font-size: 20px;
     margin-right: 5px;
     display: none;
-
   }
-  .navbar-brand, .sticky .navbar-brand{
+  .navbar-brand,
+  .sticky .navbar-brand {
     font-size: 25px;
   }
-  .btn-close{
+  .btn-close {
     border: 1px solid var(--light-text) !important;
     color: var(--light-text);
   }
-  .btn-close:hover{
+  .btn-close:hover {
     background-color: var(--light-text);
     color: var(--primary-color);
-
   }
-  aside{
+  aside {
     margin-top: 20px;
   }
-  aside h2{
+  aside h2 {
     font-size: 25px;
   }
 
-
+  article {
+    margin-top: 0 !important;
+  }
+  .picker {
+    position: sticky;
+    top: 45px;
+    right: 0;
+    z-index: 55;
+    padding: 0 60px !important;
+    display: flex;
+  }
+  .picker div {
+    min-width: 30%;
+  }
+  .picker button {
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color);
+    background-color: #fff;
+  }
+  .picker button:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  .main-content {
+    margin-top: 0 !important;
+  }
+  .book{
+    display: none !important;
+  }
 }
