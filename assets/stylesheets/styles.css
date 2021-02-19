@@ -14,9 +14,7 @@
   --twitter-blue: #1da1f2;
 }
 
-* {
-  /* border: 2px solid red !important; */
-}
+
 body {
   height: 100vh;
   font-family: "lato", "Roboto", "monsterat";
@@ -44,8 +42,9 @@ a {
 nav {
   z-index: 99;
 }
-.nav-item i {
+.nav-item i, .nav-item a {
   color: #fff;
+  display: inline-block;
 }
 
 /* -----------------Main section------------------------- */
@@ -196,6 +195,9 @@ footer p {
   width: 100% !important;
   top: 52px;
 }
+.more a{
+  color: var(--primary-color);
+}
 .more a:hover,
 .book div:hover {
   color: #ddd;
@@ -243,10 +245,19 @@ option:hover {
 .offcanvas-header {
   display: none;
 }
-
-@media (max-width: 992px) {
+@media  (min-width:766px) and (max-width:990px){
+  
+  .nav-item i{
+    display: none;
+  }
+}
+@media (max-width: 766px) {
   .offcanvas-header {
     display: block;
+  }
+  .dropdown-menu{
+    display: absolute;
+    left: -20px;
   }
   .navbar-collapse {
     position: fixed;
@@ -265,13 +276,14 @@ option:hover {
     visibility: visible;
     transform: translateX(-100%);
   }
-  .nav-item {
-    padding-top: 30px;
-  }
+  
   .nav-item i {
     font-size: 20px;
-    margin-right: 5px;
-    display: none;
+    margin-right: 0;
+    display: inline-block ;
+  }
+  .nav-item{
+    padding-top: 80px;
   }
   .navbar-brand,
   .sticky .navbar-brand {
@@ -320,5 +332,8 @@ option:hover {
   }
   .book{
     display: none !important;
+  }
+  .categories img{
+    display: none;
   }
 }
