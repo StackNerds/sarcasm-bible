@@ -1,14 +1,16 @@
-let trigger = document.querySelector(".nav-link");
-trigger.addEventListener("click", (e) => {
-  e.preventDefault();
+// let trigger = document.querySelector(".nav-link");
+// trigger.addEventListener("click", (e) => {
+//   e.preventDefault();
 
-  console.log("Clicked");
-});
+//   console.log("Clicked");
+// });
 
 $("[data-trigger]").on("click", function () {
   var trigger_id = $(this).attr("data-trigger");
   $(trigger_id).toggleClass("show");
   $("body").toggleClass("offcanvas-active");
+  // $(".book").hide();
+  $(".navbar-nav").addClass('text-center')
 });
 
 // close button
