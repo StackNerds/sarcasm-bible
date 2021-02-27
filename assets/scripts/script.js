@@ -9,6 +9,8 @@ $("[data-trigger]").on("click", function () {
   var trigger_id = $(this).attr("data-trigger");
   $(trigger_id).toggleClass("show");
   $("body").toggleClass("offcanvas-active");
+  // $(".book").hide();
+  $(".navbar-nav").addClass('text-center')
 });
 
 // close button
