@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  padding: 12px;
+  padding: 12px 0;
   background-color: var(--primary-color);
   min-width: 100%;
 }
@@ -33,6 +33,10 @@ a {
 .navbar-brand {
   font-family: "Satisfy", cursive;
   font-size: 38px;
+}
+.form-group input {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .form-group input::placeholder {
@@ -200,8 +204,8 @@ footer p {
 }
 .more a:hover,
 .book div:hover {
-  color: #ddd;
-  background-color: var(--primary-color) !important;
+  /* color: #ddd; */
+  /* background-color: var(--primary-color) !important; */
   transition: all 0.2s;
 }
 
@@ -319,14 +323,12 @@ form .submit:hover {
 }
 .page-item a {
   color: var(--primary-color) !important;
-  
 }
 .active .page-link {
   background: var(--primary-color) !important;
   border: 1px solid var(--primary-color) !important;
   color: #fff !important;
 }
-
 
 .blog-main {
   font-size: 18px;
@@ -360,7 +362,9 @@ form .submit:hover {
   text-align: center;
   border-radius: 30px;
 }
-
+.suggestions a:hover{
+  color: var(--primary-color);
+}
 /*
  * Blog posts
  */
@@ -452,9 +456,11 @@ form .submit:hover {
     z-index: 55;
     padding: 0 60px !important;
     display: flex;
+    /* background: #000; */
   }
   .picker div {
     min-width: 30%;
+    /* max-width: 100%; */
   }
   .picker button {
     border: 1px solid var(--primary-color) !important;
@@ -471,9 +477,16 @@ form .submit:hover {
   .book {
     display: none !important;
   }
+  .book .px-3:hover {
+    background: var(--primary-color);
+  }
   .categories img {
     display: none;
   }
+  
 }
 
-/* blog detail section */
+.word button:hover {
+  background: var(--light-red);
+  color: #ccc;
+}
