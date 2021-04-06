@@ -33,6 +33,10 @@ header {
 .dropdown-menu {
   z-index: 1;
 }
+.dropdown-item:hover{
+  background-color: var(--primary-color);
+  color: #ccc;
+}
 a {
   color: rgb(206, 206, 206);
 }
