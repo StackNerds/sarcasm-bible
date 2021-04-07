@@ -13,6 +13,12 @@
   --facebook-blue: #4267b2;
   --twitter-blue: #1da1f2;
 }
+.bg-primary-blue{
+  background-color: #0a1128;
+}
+.custom-bg-light{
+  background-color: #ccc;
+}
 
 body {
   height: 100vh;
@@ -27,6 +33,10 @@ header {
 .dropdown-menu {
   z-index: 1;
 }
+.dropdown-item:hover{
+  background-color: var(--primary-color);
+  color: #ccc;
+}
 a {
   color: rgb(206, 206, 206);
 }
@@ -34,7 +44,7 @@ a {
   font-family: "Satisfy", cursive;
   font-size: 38px;
 }
-.form-group input {
+.topsearch input {
   width: 80%;
   margin: 0 auto;
 }
@@ -153,13 +163,14 @@ aside p {
   text-align: left;
 }
 
+
 footer {
   padding: 50px;
   color: var(--light-text);
   background: var(--primary-color);
   font-family: "lato", sans-serif;
 }
-footer p {
+footer p, .form p {
   font-weight: 400;
   font-size: 14px;
 }
