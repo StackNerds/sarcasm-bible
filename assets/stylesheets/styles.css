@@ -13,10 +13,12 @@
   --facebook-blue: #4267b2;
   --twitter-blue: #1da1f2;
 }
-.bg-primary-blue{
+
+.bg-primary-blue {
   background-color: #0a1128;
 }
-.custom-bg-light{
+
+.custom-bg-light {
   background-color: #ccc;
 }
 
@@ -30,31 +32,49 @@ header {
   background-color: var(--primary-color);
   min-width: 100%;
 }
+.navbar{
+  padding: 2px 60px !important;
+}
+
 .dropdown-menu {
   z-index: 1;
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
   background-color: var(--primary-color);
   color: #ccc;
 }
+
 a {
   color: rgb(206, 206, 206);
 }
+
 .navbar-brand {
   font-family: "Satisfy", cursive;
   font-size: 38px;
 }
+
 .topsearch input {
   width: 80%;
   margin: 0 auto;
+  display: none;
+}
+.topsearch2 input {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 10px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 1px 10px -6px rgba(0, 0, 0, 1);
 }
 
 .form-group input::placeholder {
   color: #ccc;
 }
+
 nav {
   z-index: 99;
 }
+
 .nav-item i,
 .nav-item a {
   color: #fff;
@@ -67,31 +87,37 @@ nav {
 aside {
   padding: 20px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
-  box-shadow: 0px 0px 19px -6px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 1);
   width: 100%;
 }
+
 aside {
   padding: 0;
 }
+
 .top {
   border-bottom: 2px solid var(--light-red);
 }
+
 .icons {
   display: flex;
   justify-content: space-around;
   width: 200px;
 }
+
 .icons i,
 .btn i {
   font-size: 20px;
   color: var(--primary-color);
   transition: all 0.7s;
 }
+
 a:hover {
   color: #ffffff;
 }
+
 .icons i:hover,
 .btn span:hover,
 aside i:hover,
@@ -111,11 +137,13 @@ aside i:hover,
   justify-content: space-between;
   border-radius: 10px;
 }
+
 .btn i {
   margin: 0 8px;
   font-size: 18px;
   transition: all 0.5s;
 }
+
 .btn i:hover {
   color: var(--light-red);
 }
@@ -125,10 +153,12 @@ aside i:hover,
   color: var(--text);
   font-size: 14px;
 }
+
 .last .btn {
   border: 1px solid var(--primary-color);
   padding: 8px !important;
 }
+
 .last .btn:hover {
   border: 1px solid var(--text);
   background-color: var(--light-white);
@@ -137,19 +167,23 @@ aside i:hover,
 .author p {
   font-size: 14px;
 }
+
 .author:hover {
   color: var(--light-red);
   cursor: pointer;
 }
+
 aside {
   width: 100%;
   min-width: 100%;
   padding: 0;
 }
+
 aside h2 {
   text-align: center;
   width: 100%;
 }
+
 aside h2::after {
   content: " ";
   display: block;
@@ -158,6 +192,7 @@ aside h2::after {
   height: 2px;
   background: var(--light-red);
 }
+
 aside p {
   font-size: 14px;
   text-align: left;
@@ -170,7 +205,9 @@ footer {
   background: var(--primary-color);
   font-family: "lato", sans-serif;
 }
-footer p, .form p {
+
+footer p,
+.form p {
   font-weight: 400;
   font-size: 14px;
 }
@@ -187,11 +224,12 @@ footer p, .form p {
   transition: all 0.4s linear;
   /* height: 100%; */
 }
+
 .sticky .navbar-brand {
   font-size: 30px;
 }
 
-.show > .dropdown-menu {
+.show>.dropdown-menu {
   max-height: 500px;
   overflow-y: scroll;
   visibility: visible;
@@ -210,9 +248,11 @@ footer p, .form p {
   width: 100% !important;
   top: 52px;
 }
+
 .more a {
   color: var(--primary-color);
 }
+
 .more a:hover,
 .book div:hover {
   /* color: #ddd; */
@@ -223,10 +263,12 @@ footer p, .form p {
 .card-body span {
   background-color: var(--primary-color);
 }
+
 .categories button:hover {
   background-color: var(--primary-color) !important;
   color: #ddd;
 }
+
 .categories h5 {
   padding-bottom: 10px;
   border-bottom: 2px solid var(--primary-color);
@@ -236,6 +278,7 @@ option {
   background-color: #0a1128;
   /* color: var(--light-text); */
 }
+
 option:hover {
   background-color: var(--light-red);
 }
@@ -270,11 +313,13 @@ option:hover {
   background-size: cover;
   transition: all linear 1.7s;
 }
+
 .blog:hover {
   transition: all linear 0.7s;
   background-image: linear-gradient(rgba(0, 0, 0, 0.331), rgba(0, 0, 0, 0.434)),
     url("/assets/images/adult-3086304_640.jpg");
 }
+
 .blog button {
   position: absolute;
   top: 45%;
@@ -282,22 +327,26 @@ option:hover {
   z-index: 0;
   border: 1px solid #fff;
 }
+
 .blog button:hover {
   background-color: var(--primary-color);
   color: #fff;
 }
+
 .blogsection .word {
   -webkit-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 1);
   width: 100%;
 }
+
 .blogsection .word:hover {
   -webkit-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 1);
   width: 100%;
 }
+
 /* Blog Detail section */
 
 .blog-masthead {
@@ -310,31 +359,38 @@ option:hover {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 60px;
   font-weight: normal;
 }
+
 .blog-description {
   font-size: 20px;
   color: #999;
 }
+
 form .submit {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
   background: #fff;
 }
+
 form .submit:hover {
   color: #fff;
   background: var(--primary-color);
 }
+
 .pagination {
   color: var(--primary-color);
 }
+
 .page-item a {
   color: var(--primary-color) !important;
 }
+
 .active .page-link {
   background: var(--primary-color) !important;
   border: 1px solid var(--primary-color) !important;
@@ -351,11 +407,13 @@ form .submit:hover {
   padding: 15px;
   margin: 0 -15px 15px;
 }
+
 .sidebar-module-inset {
   padding: 15px;
   background-color: #f5f5f5;
   border-radius: 4px;
 }
+
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
@@ -367,15 +425,18 @@ form .submit:hover {
   margin-bottom: 60px;
   text-align: left;
 }
-.pager > li > a {
+
+.pager>li>a {
   width: 140px;
   padding: 10px 20px;
   text-align: center;
   border-radius: 30px;
 }
-.suggestions a:hover{
+
+.suggestions a:hover {
   color: var(--primary-color);
 }
+
 /*
  * Blog posts
  */
@@ -383,10 +444,12 @@ form .submit:hover {
 .blog-post {
   margin-bottom: 60px;
 }
+
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
 }
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
@@ -400,18 +463,34 @@ form .submit:hover {
   .nav-item i {
     display: none;
   }
+
   .navbar-brand {
     font-size: 30px;
   }
 }
+
 @media (max-width: 766px) {
+  .topsearch input {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+
+  }
+
+  .topsearch2 input {
+    display: none;
+   
+  }
+
   .offcanvas-header {
     display: block;
   }
+
   .dropdown-menu {
     display: absolute;
     left: -20px;
   }
+
   .navbar-collapse {
     position: fixed;
     top: 0;
@@ -425,6 +504,7 @@ form .submit:hover {
     background-color: var(--primary-color);
     transition: visibility 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   }
+
   .navbar-collapse.show {
     visibility: visible;
     transform: translateX(-100%);
@@ -435,24 +515,30 @@ form .submit:hover {
     margin-right: 0;
     display: inline-block;
   }
+
   .nav-item {
     padding-top: 80px;
   }
+
   .navbar-brand,
   .sticky .navbar-brand {
     font-size: 25px;
   }
+
   .btn-close {
     border: 1px solid var(--light-text) !important;
     color: var(--light-text);
   }
+
   .btn-close:hover {
     background-color: var(--light-text);
     color: var(--primary-color);
   }
+
   aside {
     margin-top: 20px;
   }
+
   aside h2 {
     font-size: 25px;
   }
@@ -460,6 +546,7 @@ form .submit:hover {
   article {
     margin-top: 0 !important;
   }
+
   .picker {
     position: sticky;
     top: 45px;
@@ -469,32 +556,39 @@ form .submit:hover {
     display: flex;
     /* background: #000; */
   }
+
   .picker div {
     min-width: 30%;
     /* max-width: 100%; */
   }
+
   .picker button {
     border: 1px solid var(--primary-color) !important;
     color: var(--primary-color);
     background-color: #fff;
   }
+
   .picker button:hover {
     color: #fff;
     background-color: var(--primary-color);
   }
+
   .main-content {
     margin-top: 0 !important;
   }
+
   .book {
     display: none !important;
   }
+
   .book .px-3:hover {
     background: var(--primary-color);
   }
+
   .categories img {
     display: none;
   }
-  
+
 }
 
 .word button:hover {
