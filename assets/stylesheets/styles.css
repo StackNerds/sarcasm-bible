@@ -47,8 +47,7 @@ header {
 }
 
 .dropdown-item:hover {
-  background-color: var(--primary-color);
-  color: #ccc;
+  color: #0a1128;
 }
 
 a {
@@ -247,12 +246,15 @@ footer p,
 }
 
 .dropdown-menu {
-  display: block;
+  display: absolute;
+  left:0;
+  transform: translate(100%);
+  justify-content: center;
   max-height: 0;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
-  width: 100% !important;
+  width: 25% !important;
   top: 52px;
 }
 
@@ -470,6 +472,9 @@ form .submit:hover {
   .nav-item i {
     display: none;
   }
+  .navbar{
+    padding: 0 !important;
+  }
 
   .navbar-brand {
     font-size: 30px;
@@ -503,7 +508,7 @@ form .submit:hover {
     top: 0;
     bottom: 0;
     left: 100%;
-    width: 100%;
+    width: 50%;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
@@ -524,7 +529,8 @@ form .submit:hover {
   }
 
   .nav-item {
-    padding-top: 80px;
+
+    padding-top: 20px;
   }
 
   .navbar-brand,
@@ -604,4 +610,10 @@ form .submit:hover {
 }
 
 /* Login */
-
+.login a{
+  color: var(--primary-color);
+  font-size: 14px;
+}
+.login a:hover {
+  color:var(--light-red);
+}
