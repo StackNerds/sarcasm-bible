@@ -21,6 +21,11 @@
 .custom-bg-light {
   background-color: #ccc;
 }
+.custom-light{
+  background-color: #e9edf1;
+}
+
+.bg-primary-white {}
 
 body {
   height: 100vh;
@@ -32,7 +37,8 @@ header {
   background-color: var(--primary-color);
   min-width: 100%;
 }
-.navbar{
+
+.navbar {
   padding: 2px 60px !important;
 }
 
@@ -59,6 +65,7 @@ a {
   margin: 0 auto;
   display: none;
 }
+
 .topsearch2 input {
   width: 100%;
   margin: 0 auto;
@@ -479,7 +486,7 @@ form .submit:hover {
 
   .topsearch2 input {
     display: none;
-   
+
   }
 
   .offcanvas-header {
@@ -595,3 +602,6 @@ form .submit:hover {
   background: var(--light-red);
   color: #ccc;
 }
+
+/* Login */
+
