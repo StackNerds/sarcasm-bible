@@ -10,7 +10,7 @@ $("[data-trigger]").on("click", function () {
   $(trigger_id).toggleClass("show");
   $("body").toggleClass("offcanvas-active");
   // $(".book").hide();
-  $(".navbar-nav").addClass('text-center')
+  // $(".navbar-nav").addClass('')
 });
 
 // close button
